@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "stylesheet" %>
+
+<div class="navbar">
+    
+<a class="navbaroption" href="Home"> <%= 
+link_to "Youtube Clone", posts_path%></a>
+<%- if user_signed_in? %>
+<div class="signup" style="float:right">
+  <li><%= link_to t('auth.sign_out'), destroy_user_session_path, method: 'delete' %></li>
+</div>
+<% else %>
+ <div class="signup" style="float:right">
+  <li><%= link_to t('auth.sign_in'), new_user_session_path %></li>
+  <li ><%= link_to t('auth.sign_up'), new_user_registration_path %></li>
+</div>
+<% end %>
+</div>

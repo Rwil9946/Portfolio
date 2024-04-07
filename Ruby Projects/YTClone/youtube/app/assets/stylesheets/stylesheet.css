@@ -1,0 +1,41 @@
+.navbar {
+    background-color: black;
+    overflow: hidden;
+
+}
+.navbar a{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    margin: 0;
+    padding: 0;
+    color: lightgray
+}
+
+li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.signup {
+    float: right;
+}
+a:hover {
+    border: 1px solid #e7e7e7;
+    color: red
+}
+.footer {
+    color: lightgray;
+    display: block;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+
+
+}
+
+.navbaroption {
+    background-color: grey;
+    
+}
